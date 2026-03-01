@@ -1,0 +1,30 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Empêche le scroll horizontal */
+html, body {
+  overflow-x: hidden;
+}
+
+/* FOND GLOBAL POUR TOUTES LES PAGES */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+
+  background-image: url("/portfolio/background.jpg"); /* même image que ton accueil */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  min-height: 100vh;
+}
+
+/* Permet aux pages de prendre toute la hauteur */
+#root {
+  min-height: 100vh;
+}
