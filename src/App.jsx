@@ -1,4 +1,3 @@
-// App.jsx
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";

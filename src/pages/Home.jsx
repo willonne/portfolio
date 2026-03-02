@@ -1,47 +1,30 @@
-import Navbar from "../components/Navbar.jsx";
-import Footer from "../components/Footer.jsx";
 import { projects } from "../data/projects.js";
 import ProjectCard from "../components/ProjectCard.jsx";
 import Skills from "../components/Skills.jsx";
 
 export default function Home() {
   return (
-    <div
-      style={{
-        width: "100vw",
-        minHeight: "100vh",
-        overflowX: "hidden",
-        overflowY: "auto",
-        margin: 0,
-        padding: 0,
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${import.meta.env.BASE_URL}images/fussli-songe-d-une-nuit-d-ete.jpg)`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
-      }}
-    >
-
-     {/* HERO */}
-<section
-  style={{
-    height: "100vh",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    textAlign: "center",
-    padding: "0 20px",
-  }}
->
-  <h1 style={{ fontSize: "6rem", margin: 0, fontWeight: "bold" }}>C.V.D</h1>
-  <h2 style={{ fontSize: "2rem", marginTop: "10px", fontWeight: "normal" }}>
-    Cloud Virtual Documents
-  </h2>
-  <p style={{ maxWidth: "600px", marginTop: "20px" }}>
-    Bienvenue sur mon portfolio – Développeur Front-End passionné par les interfaces modernes.
-  </p>
-</section> 
+    <div>
+      {/* HERO */}
+      <section
+        style={{
+          height: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          padding: "0 20px",
+        }}
+      >
+        <h1 style={{ fontSize: "6rem", margin: 0, fontWeight: "bold" }}>C.V.D</h1>
+        <h2 style={{ fontSize: "2rem", marginTop: "10px", fontWeight: "normal" }}>
+          Cloud Virtual Documents
+        </h2>
+        <p style={{ maxWidth: "600px", marginTop: "20px" }}>
+          Bienvenue sur mon portfolio – Développeur Front-End passionné par les interfaces modernes.
+        </p>
+      </section>
 
       {/* À PROPOS */}
       <section
@@ -90,37 +73,6 @@ export default function Home() {
             <ProjectCard key={i} project={p} />
           ))}
         </div>
-      </section>
-
-      {/* CONTACT */}
-      <section
-        style={{
-          padding: "80px 20px",
-          textAlign: "center",
-          backgroundColor: "rgba(0,0,0,0.6)",
-        }}
-      >
-        <h2>Contact</h2>
-        <p>
-          Email : <a href="mailto:willonne.production@hotmail.com">willonne.production@hotmail.com</a>
-        </p>
-        <p>
-          <a
-            href="https://www.linkedin.com/in/nicolas-portier-8bb5a0366/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: "inline-block",
-              padding: "10px 20px",
-              backgroundColor: "#0077b5",
-              color: "white",
-              borderRadius: "6px",
-              fontWeight: "bold",
-            }}
-          >
-            LinkedIn
-          </a>
-        </p>
       </section>
     </div>
   );
