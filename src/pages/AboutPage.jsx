@@ -4,7 +4,6 @@ import Footer from "../components/Footer.jsx";
 export default function AboutPage() {
   return (
     <div style={{ minHeight: "100vh", color: "white" }}>
-      <Navbar />
       <section style={{ padding: "80px 20px", textAlign: "center" }}>
         <h1>À propos</h1>
         <p style={{ maxWidth: "700px", margin: "20px auto" }}>
@@ -12,7 +11,6 @@ export default function AboutPage() {
           Ce portfolio présente mes projets, compétences et réalisations.
         </p>
       </section>
-      <Footer />
     </div>
   );
 }

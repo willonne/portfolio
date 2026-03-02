@@ -14,15 +14,13 @@ export default function Home() {
         overflowY: "auto",
         margin: 0,
         padding: 0,
-        backgroundImage:
-          "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/portfolio/images/nightmare-nicolai-abraham-abildgaard.jpg')",
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${import.meta.env.BASE_URL}images/fussli-songe-d-une-nuit-d-ete.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
       }}
     >
-      <Navbar />
 
      {/* HERO */}
 <section
@@ -124,8 +122,6 @@ export default function Home() {
           </a>
         </p>
       </section>
-
-      <Footer />
     </div>
   );
 }
